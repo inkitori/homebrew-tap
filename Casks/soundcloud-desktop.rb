@@ -1,6 +1,6 @@
 cask "soundcloud-desktop" do
-  version "0.1.0"
-  sha256 "f238f62cc101c0d9914f2e9275882d98c979dc33d27e976c5d9220ffcd7581c0"
+  version "0.2.0"
+  sha256 "78b33f742ab30ce98c68766eef91386e0f9a4af4140eea4ba22f1c751eca7aa9"
 
   url "https://github.com/inkitori/soundcloud-desktop/releases/download/v#{version}/SoundCloud.Desktop_#{version}_universal.dmg"
   name "SoundCloud Desktop"
@@ -13,7 +13,7 @@ cask "soundcloud-desktop" do
   end
 
   auto_updates true
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
 
   app "SoundCloud Desktop.app"
 
@@ -26,8 +26,8 @@ cask "soundcloud-desktop" do
   ]
 
   caveats <<~CAVEATS
-    This app is not notarized with Apple. If you installed without
-    --no-quarantine, clear the quarantine flag before first launch:
+    This app is not notarized with Apple. Clear the quarantine flag
+    before first launch or macOS will claim the app is "damaged":
 
       xattr -cr "/Applications/SoundCloud Desktop.app"
 
