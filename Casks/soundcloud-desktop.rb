@@ -1,6 +1,6 @@
 cask "soundcloud-desktop" do
-  version "0.2.2"
-  sha256 "ef52c994178f7e9e518d91808abe97e92a2928acb0913359b68bb99d3edf8335"
+  version "0.2.3"
+  sha256 "a7230663894fa3c5cfc15b752e407bfe5ae34ea8500472af30d656e1d2882e1b"
 
   url "https://github.com/inkitori/soundcloud-desktop/releases/download/v#{version}/SoundCloud.Desktop_#{version}_universal.dmg"
   name "SoundCloud Desktop"
